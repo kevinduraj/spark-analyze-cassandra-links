@@ -1,0 +1,1 @@
+/home/spider/data/1-friendly-domains.txt

@@ -1,11 +1,3 @@
-[0m[[0minfo[0m] [0mLoading project definition from /root/spark-counter/project[0m
-[0m[[0minfo[0m] [0mSet current project to spark-engine (in build file:/root/spark-counter/)[0m
-[0m[[32msuccess[0m] [0mTotal time: 0 s, completed Jul 6, 2016 4:48:36 PM[0m
-[0m[[0minfo[0m] [0mLoading project definition from /root/spark-counter/project[0m
-[0m[[0minfo[0m] [0mSet current project to spark-engine (in build file:/root/spark-counter/)[0m
-[0m[[32msuccess[0m] [0mTotal time: 9 s, completed Jul 6, 2016 4:48:49 PM[0m
-dse spark-submit --class TopDomains target/scala-2.10/spark-engine-assembly-1.0.jar ldomain 1000000
-ldomain 1000000
 simpletaxindia.net 1000832
 GradeATools.com 1004251
 hdforums.com 1004593
