@@ -6,7 +6,7 @@ scalaVersion := "2.10.5"
 
 val sparkVersion = "1.5.0"
 
-val sparkCassandraVersion = "1.4.2"
+val sparkCassandraVersion = "1.4.0"
 
 libraryDependencies += "org.apache.spark" %% "spark-core" % sparkVersion % "provided"
 
@@ -15,7 +15,6 @@ libraryDependencies += "org.apache.spark" %% "spark-sql" % sparkVersion % "provi
 libraryDependencies += "org.apache.spark" %% "spark-hive" % sparkVersion % "provided"
 
 libraryDependencies += "com.datastax.spark" %% "spark-cassandra-connector" % sparkCassandraVersion % "provided"
-//libraryDependencies += "com.datastax.spark" %% "spark-cassandra-connector" % "1.6.0"
 
 resolvers += Resolver.sonatypeRepo("public")
 
