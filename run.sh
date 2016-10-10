@@ -43,16 +43,11 @@ elif [ "$1" == "clear" ] 2>/dev/null; then
 
   echo "cqlsh -e truncate cloud4.vdomain;" 
   cqlsh -e "truncate cloud4.vdomain;" 
-  sleep 1
-  echo "cqlsh -e truncate cloud4.ldomain;" 
-  cqlsh -e "truncate cloud4.ldomain;" 
-
 
 else
 
   echo "--------------------------------"
-  echo "./run.sh top vdomain 10000"
-  echo "./run.sh top ldomain 1000000"
+  echo "./run.sh top vdomain 1000"
   echo "--------------------------------"
   echo "./run.sh total"
   echo "./run.sh links"
