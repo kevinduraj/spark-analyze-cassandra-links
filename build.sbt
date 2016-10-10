@@ -2,17 +2,17 @@ name := "spark-engine"
 
 version := "1.0"
 
-scalaVersion := "2.10.5"
+val ScalaVersion := "2.10.5"
 
-val sparkVersion = "1.5.0"
+val SparkVersion = "1.5.0"
 
 val SparkCassandraConnector = "1.4.4"
 
-libraryDependencies += "org.apache.spark" %% "spark-core" % sparkVersion % "provided"
+libraryDependencies += "org.apache.spark" %% "spark-core" % SparkVersion % "provided"
 
-libraryDependencies += "org.apache.spark" %% "spark-sql" % sparkVersion % "provided"
+libraryDependencies += "org.apache.spark" %% "spark-sql" % SparkVersion % "provided"
 
-libraryDependencies += "org.apache.spark" %% "spark-hive" % sparkVersion % "provided"
+libraryDependencies += "org.apache.spark" %% "spark-hive" % SparkVersion % "provided"
 
 libraryDependencies += "com.datastax.spark" %% "spark-cassandra-connector" % SparkCassandraConnector % "provided"
 
