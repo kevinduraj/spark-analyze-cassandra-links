@@ -8,5 +8,5 @@ cqlsh -e "$SQL"
 echo $1 >> /home/spider/data/0-banned-domains.txt
 tail -10 /home/spider/data/0-banned-domains.txt
 
-sed -i '/$1/d;' /home/spider/data/1-friendly-domains.txt
 grep -lir "$1" /home/spider/data/
+sed -i "/$1/d;" /home/spider/data/1-friendly-domains.txt
