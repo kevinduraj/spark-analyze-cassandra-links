@@ -21,13 +21,11 @@ object Total {
 
     val link1 = sc.cassandraTable("cloud4", "vdomain").select("url").as(TotalCase)
     val link2 = sc.cassandraTable("cloud4", "visit2").select("url").as(TotalCase)
-    val link3 = sc.cassandraTable("cloud4", "ldomain").select("url").as(TotalCase)
 
     var map = SortedMap[Int, String]()
 
     map += (link1.cassandraCount().toInt -> "vDomain : ")
     map += (link2.cassandraCount().toInt -> "Visit   : ")
-    map += (link3.cassandraCount().toInt -> "lDomain : ")
 
     println("-----------------------------------------")
     map.foreach { row =>
