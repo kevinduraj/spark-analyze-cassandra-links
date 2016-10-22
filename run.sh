@@ -47,7 +47,7 @@ elif [ "$1" == "clear" ] 2>/dev/null; then
 else
 
   echo "--------------------------------"
-  echo "./run.sh top vdomain 900"
+  echo "./run.sh top vdomain 750"
   echo "--------------------------------"
   echo "./run.sh total"
   echo "./run.sh links"
