@@ -19,8 +19,8 @@ object Total {
     val conf = new SparkConf(true).setAppName("Total")
     val sc = new SparkContext(conf)
 
-    val link1 = sc.cassandraTable("cloud4", "vdomain").select("url").as(TotalCase)
-    val link2 = sc.cassandraTable("cloud4", "visit2").select("url").as(TotalCase)
+    val link1 = sc.cassandraTable("cloud1", "vdomain").select("url").as(TotalCase)
+    val link2 = sc.cassandraTable("cloud1", "visit").select("url").as(TotalCase)
 
     var map = SortedMap[Int, String]()
 
